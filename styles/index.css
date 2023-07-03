@@ -53,11 +53,11 @@ body {
 
 @media screen and (min-width: 768px) {
   .container-1 {
-    height: 109px;
+    height: 108px;
     padding: 0 3.4% 0 3.25%;
   }
   .container-1 .logo {
-    margin-top: -6px;
+    margin-top: -5px;
   }
   .container-1 .logo img {
     height: 43px;
@@ -74,8 +74,8 @@ body {
   }
   .container-1 .sandwich > div {
     width: 52.44px;
-    height: 35.44px;
-    margin: 1.78px auto;
+    height: 35px;
+    margin: 2px auto;
   }
   .container-1 .sandwich > div div {
     width: 30px;
@@ -116,6 +116,135 @@ body {
   }
   .container-1 .sandwich {
     display: none;
+  }
+}
+.container-2 {
+  width: 100%;
+  height: 212px;
+  color: #ffffff;
+  background-color: #292929;
+  text-align: center;
+  padding-top: 45px;
+}
+.container-2 h2 {
+  font-size: 25px;
+  font-weight: 200;
+  margin-left: -3px;
+}
+.container-2 h1 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin-top: -3px;
+  letter-spacing: -0.8px;
+  margin-left: -3px;
+}
+.container-2 p {
+  font-size: 9px;
+  letter-spacing: -0.1px;
+  margin-top: 1px;
+}
+.container-2 p span {
+  display: none;
+}
+.container-2 button {
+  width: 64px;
+  height: 19px;
+  background-color: #3AB6B2;
+  border: none;
+  margin-top: 16px;
+  margin-left: -3px;
+}
+.container-2 button p {
+  width: 60px;
+  height: 15px;
+  margin: 2px auto;
+  padding-left: 3px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  font-size: 7px;
+  line-height: 14px;
+}
+.container-2 div {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container-2 {
+    height: 592px;
+    padding-top: 151px;
+  }
+  .container-2 h2 {
+    font-size: 58.81px;
+    margin-left: 0;
+  }
+  .container-2 h1 {
+    font-size: 71.77px;
+    letter-spacing: -1.9px;
+    margin-top: -5px;
+  }
+  .container-2 p {
+    font-size: 18.94px;
+    margin-top: 4px;
+    margin-left: -6px;
+    font-weight: 300;
+    letter-spacing: -0.07px;
+  }
+  .container-2 p span {
+    display: inline;
+  }
+  .container-2 button {
+    width: 144px;
+    height: 44px;
+    margin-top: 36px;
+    margin-left: -6px;
+  }
+  .container-2 button p {
+    font-size: 12px;
+    font-weight: bold;
+    width: 138px;
+    height: 38px;
+    margin: 3px auto;
+    line-height: 36px;
+    letter-spacing: 0.4px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container-2 {
+    height: 759px;
+    padding-top: 235px;
+    position: relative;
+  }
+  .container-2 h2 {
+    font-size: 62px;
+    font-weight: 200;
+    margin-left: 22px;
+  }
+  .container-2 h1 {
+    margin-left: 22px;
+    letter-spacing: -1px;
+  }
+  .container-2 p {
+    letter-spacing: 0.4px;
+    margin-top: 6px;
+    margin-left: 18px;
+  }
+  .container-2 button {
+    margin-top: 41px;
+    margin-left: 23px;
+  }
+  .container-2 div {
+    display: block;
+  }
+  .container-2 div img {
+    position: absolute;
+    top: 39.5%;
+  }
+  .container-2 div img:first-child {
+    left: 2.1%;
+  }
+  .container-2 div img:last-child {
+    right: 2.1%;
   }
 }
 

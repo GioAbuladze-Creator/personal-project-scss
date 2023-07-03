@@ -1,0 +1,39 @@
+@media screen and ($desktop) {
+    .container-2 {
+        height: 759px;
+        padding-top: 235px;
+        position:relative;
+        h2{
+            font-size: 62px;
+            font-weight: 200;
+            margin-left: 22px;
+        }
+        h1{
+            margin-left:22px;
+            letter-spacing: -1px;
+        }
+        p{
+            letter-spacing: 0.4px;
+            margin-top: 6px;
+            margin-left:18px;
+        }
+        button{
+            margin-top:41px;
+            margin-left:23px;
+        }
+        div{
+            display: block;
+            img{
+                position: absolute;
+                top: 39.5%;
+            }
+            img:first-child{
+                left:2.1%;
+            }
+            img:last-child{
+                right:2.1%;
+            }
+            
+        }
+    }
+}
