@@ -1,0 +1,37 @@
+@media screen and ($tablet) {
+    .container-1 {
+        height: 109px;
+        padding: 0 3.4% 0 3.25%;
+
+        .logo {
+            margin-top: -6px;
+
+            img {
+                height: 43px;
+                width: 27px;
+            }
+
+            span {
+                font-size: 36px;
+                vertical-align: 3px;
+                letter-spacing: 0.7px;
+            }
+        }
+
+        .sandwich {
+            width: 56px;
+            height: 39px;
+
+            >div {
+                width: 52.44px;
+                height: 35.44px;
+                margin: 1.78px auto;
+
+                // --three lines--
+                div {
+                    width: 30px;
+                }
+            }
+        }
+    }
+}

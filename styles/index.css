@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container-1 {
+  width: 100%;
+  height: 67px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #0E0E0E;
+  padding: 0 6.56% 0 6.25%;
+  align-items: center;
+}
+.container-1 .logo span {
+  color: #ffffff;
+  font-size: 27.22px;
+  font-weight: 300;
+  margin-left: -5.5px;
+  vertical-align: 1px;
+  letter-spacing: 0.5px;
+}
+.container-1 .nav-links {
+  display: none;
+}
+.container-1 .sandwich {
+  width: 48px;
+  height: 31px;
+  background-color: #3AB6B2;
+}
+.container-1 .sandwich > div {
+  border: 1px solid #ffffff;
+  width: 44.44px;
+  height: 27.44px;
+  margin: 1.76px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: center;
+}
+.container-1 .sandwich > div div {
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 1.5px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container-1 {
+    height: 109px;
+    padding: 0 3.4% 0 3.25%;
+  }
+  .container-1 .logo {
+    margin-top: -6px;
+  }
+  .container-1 .logo img {
+    height: 43px;
+    width: 27px;
+  }
+  .container-1 .logo span {
+    font-size: 36px;
+    vertical-align: 3px;
+    letter-spacing: 0.7px;
+  }
+  .container-1 .sandwich {
+    width: 56px;
+    height: 39px;
+  }
+  .container-1 .sandwich > div {
+    width: 52.44px;
+    height: 35.44px;
+    margin: 1.78px auto;
+  }
+  .container-1 .sandwich > div div {
+    width: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container-1 {
+    height: 101px;
+    padding: 0 19.61% 0 19.5%;
+  }
+  .container-1 .logo {
+    margin-top: 0px;
+  }
+  .container-1 .logo img {
+    height: 43px;
+    width: 28px;
+    margin-bottom: -2px;
+  }
+  .container-1 .logo span {
+    vertical-align: 0;
+  }
+  .container-1 .nav-links {
+    width: 39%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: flex-end;
+  }
+  .container-1 .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    margin-top: -3px;
+  }
+  .container-1 .nav-links a:not(:last-child) {
+    margin-right: 9.1%;
+  }
+  .container-1 .sandwich {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

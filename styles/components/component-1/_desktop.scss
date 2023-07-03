@@ -1,0 +1,42 @@
+@media screen and ($desktop) {
+    .container-1 {
+        height: 101px;
+        padding: 0 19.61% 0 19.5%;
+
+        .logo {
+            margin-top: 0px;
+
+            img {
+                height: 43px;
+                width: 28px;
+                margin-bottom: -2px;
+            }
+
+            span {
+                vertical-align: 0;
+            }
+        }
+
+        .nav-links {
+            width: 39%;
+            @include flex;
+            justify-content: flex-end;
+
+            a {
+                text-decoration: none;
+                color: $white;
+                font-size: 14px;
+                letter-spacing: -0.5px;
+                margin-top: -3px;
+
+                &:not(:last-child) {
+                    margin-right: 9.1%;
+                }
+            }
+        }
+
+        .sandwich {
+            display: none;
+        }
+    }
+}
