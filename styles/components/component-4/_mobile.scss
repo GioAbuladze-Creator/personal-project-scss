@@ -1,0 +1,71 @@
+.container-4{
+    height:1107.82px;
+    background-color: $black;
+    @include flex(column);
+    justify-content: flex-start;
+    color:$white;
+    text-align: center;
+    padding:36px 6.56% 0 5.93%;
+    h2{
+        font-size:27px;
+        font-weight:600;
+        margin-left:2px;
+    }
+    >img{
+        width:111px;
+        margin:9px auto 10px auto;
+    }   
+    .services{
+        @include flex(column);
+        justify-content: flex-start;
+        margin-top:45px;
+        // --each service--
+        .service{
+            margin-bottom:43px;
+            div{
+                z-index: 0;
+                position: relative;
+                width: 120px;
+                height: 120px;
+                margin:0 auto;
+            }
+
+            h3{
+                font-size: 19px;
+                color:$main-aqua;
+                margin-top:58px;
+                margin-left:2px;
+            }
+            p{
+                font-family:"Open Sans", sans-serif;
+                font-size: 12.98px;
+                line-height: 20.88px;
+                margin-top:13px;
+                width: 280px;
+                margin:13px auto 0 auto;
+                letter-spacing: 0.2px;
+            }
+            // --each one needs adjustment--
+            &:nth-child(1){
+                div{
+                    img{
+                        margin-left:3px;
+                        margin-top:1px;
+                    }
+                }
+            }
+            &:nth-child(2),&:nth-child(3){
+                img{
+                    margin-left:2px;
+                }
+                h3{
+                    letter-spacing: 0.3px;
+                }
+                p{
+                    line-height: 22px;
+                }
+            }
+            
+        }
+    }    
+}

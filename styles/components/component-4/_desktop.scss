@@ -1,0 +1,25 @@
+@media screen and ($desktop) {
+    .container-4{
+        background-color: $section-bg-2;
+        height: 783px;
+        padding-top:140px;
+        h2{
+            font-size:31px;
+            margin-left:12px;
+        }
+        >img{
+            left:5px;
+            margin-top:4px;
+            width:111px;
+        }
+        .services{
+            flex-direction: row;
+            margin:133px auto 0 auto;
+            width: 70%;
+            justify-content: space-between;
+            position: relative;
+            left:4px;
+        }
+    }
+
+}
