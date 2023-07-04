@@ -1,0 +1,95 @@
+.container-5{
+    height:843px;
+    padding:37px 6.56% 0 5.93%;
+    text-align: center;
+    h2{
+        font-size:27px;
+        font-weight: 600;
+        color:$font-color-3;
+    }
+    .img-container{
+        margin-top: 10px;
+        right:1px;
+        position: relative;
+        display:inline-block;
+        width: 96px;
+        // --dashes before and after icon--
+        @include dashes;
+    }      
+    .gallery{
+        @include flex(column);
+        justify-content: flex-start;
+        margin-top:31px;
+        .item{
+            height:163px;
+            background-color: $section-bg-1;
+            margin-bottom:7px;
+            position:relative;
+            .socials{
+                margin-top:43.5px;
+                margin-left:1px;
+                color:$white;
+                i{
+                    background-color: $main-aqua;
+                    width: 26.4px;
+                    height: 26.4px;
+                    border-radius: 50%;
+                    border:2px solid $main-aqua;
+                    line-height: 23px;
+                    font-size: 11px;
+                    margin:0 1px;
+                    &:hover{
+                        background-color: $section-bg-1;
+                    }
+                    &:nth-child(4),&:nth-child(5){
+                        display: none;
+                    }
+                }
+            }
+            .details{
+                background-color: $section-bg-3;
+                height: 54px;
+                margin-top:39px;
+                padding-top:12px;
+                padding-left: 2px;
+                
+                h4{
+                    color:$white;
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: 0.05px;
+                    
+                    span{
+                        display: none;
+                    }
+                }
+                p{
+                    color:$main-aqua;
+                    font-weight: 600;
+                    font-style: italic;
+                    font-size: 11px;
+                    margin-top:3px;
+                    letter-spacing: 0.05px;
+                    margin-left:1px;
+                }
+            }
+            // --hidden till hover--
+            .cover{
+                position:absolute;
+                width: 100%;
+                height:100%;
+                background-color: $black;                
+            }
+            &:hover{
+                .cover{
+                    z-index: -1;
+                }
+            }
+            // --hide items--
+            &:nth-child(5),&:nth-child(6),&:nth-child(7){
+                display: none;
+            }
+            
+        }
+    }
+}

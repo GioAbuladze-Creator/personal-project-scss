@@ -13,3 +13,28 @@
     color:$white;
     background-color:$main-aqua;
 }
+
+// --dashes before and after icon--
+@mixin dashes{
+    &::before,
+    &::after{
+        content: "";
+        position: absolute;
+        top: 56%;
+        width: 33px;
+        height: 1px;
+        background-color: $dash-color;
+    }
+    &::before{
+        left: 0;
+    }
+    &::after{
+        right: 0;
+    }
+    img{
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+    }
+}
