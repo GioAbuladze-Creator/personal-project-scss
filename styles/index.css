@@ -97,7 +97,7 @@ body {
     vertical-align: 0;
   }
   .container-1 .nav-links {
-    width: 39%;
+    width: 749px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -108,10 +108,10 @@ body {
     color: #ffffff;
     font-size: 14px;
     letter-spacing: -0.5px;
-    margin-top: -3px;
+    margin-top: -2px;
   }
   .container-1 .nav-links a:not(:last-child) {
-    margin-right: 9.1%;
+    margin-right: 41.3px;
   }
   .container-1 .sandwich {
     display: none;
@@ -127,7 +127,10 @@ body {
 .container-2 h2 {
   font-size: 25px;
   font-weight: 200;
-  margin-left: -3px;
+  width: 200px;
+  margin: 0 auto;
+  position: relative;
+  right: 2px;
 }
 .container-2 h1 {
   font-size: 30px;
@@ -135,14 +138,19 @@ body {
   font-family: "Montserrat", sans-serif;
   margin-top: -3px;
   letter-spacing: -0.8px;
-  margin-left: -3px;
+  width: 240px;
+  margin: -3px auto 0 auto;
+  position: relative;
+  right: 2px;
 }
-.container-2 p, .container-2 .container-3 ul, .container-3 .container-2 ul {
+.container-2 > p, .container-3 .container-2 > ul {
   font-size: 9px;
   letter-spacing: -0.1px;
-  margin-top: 1px;
+  width: 290px;
+  margin: 1px auto 0 auto;
+  position: relative;
 }
-.container-2 p span, .container-2 .container-3 ul span, .container-3 .container-2 ul span {
+.container-2 > p span, .container-3 .container-2 > ul span {
   display: none;
 }
 .container-2 button {
@@ -179,21 +187,25 @@ body {
   }
   .container-2 h2 {
     font-size: 58.81px;
-    margin-left: 0;
+    width: 440px;
+    right: 1px;
   }
   .container-2 h1 {
     font-size: 71.77px;
     letter-spacing: -1.9px;
     margin-top: -5px;
+    width: 550px;
+    right: 2px;
   }
-  .container-2 p, .container-2 .container-3 ul, .container-3 .container-2 ul {
+  .container-2 > p, .container-3 .container-2 > ul {
+    width: 700px;
     font-size: 18.94px;
-    margin-top: 4px;
-    margin-left: -6px;
+    margin: 4px auto 0 auto;
     font-weight: 300;
     letter-spacing: -0.07px;
+    right: 2px;
   }
-  .container-2 p span, .container-2 .container-3 ul span, .container-3 .container-2 ul span {
+  .container-2 > p span, .container-3 .container-2 > ul span {
     display: inline;
   }
   .container-2 button {
@@ -203,14 +215,14 @@ body {
     margin-left: -6px;
   }
   .container-2 button p, .container-2 button .container-3 ul, .container-3 .container-2 button ul {
-    font-size: 12px;
+    font-size: 12.5px;
     font-weight: bold;
     width: 138px;
     height: 38px;
     margin: 3px auto;
     line-height: 36px;
     letter-spacing: 0.4px;
-    padding-right: 3px;
+    padding-right: 3.1px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -222,16 +234,19 @@ body {
   .container-2 h2 {
     font-size: 62px;
     font-weight: 200;
-    margin-left: 22px;
+    width: 500px;
+    left: 11px;
   }
   .container-2 h1 {
-    margin-left: 22px;
     letter-spacing: -1px;
+    width: 600px;
+    left: 7px;
   }
-  .container-2 p, .container-2 .container-3 ul, .container-3 .container-2 ul {
+  .container-2 > p, .container-3 .container-2 > ul {
     letter-spacing: 0.4px;
     margin-top: 6px;
-    margin-left: 18px;
+    width: 800px;
+    left: 9px;
   }
   .container-2 button {
     margin-top: 41px;
