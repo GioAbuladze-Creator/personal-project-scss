@@ -18,7 +18,7 @@
         }
 
         .nav-links {
-            width: 39%;
+            width: 749px;
             @include flex;
             justify-content: flex-end;
 
@@ -27,10 +27,10 @@
                 color: $white;
                 font-size: 14px;
                 letter-spacing: -0.5px;
-                margin-top: -3px;
+                margin-top: -2px;
 
                 &:not(:last-child) {
-                    margin-right: 9.1%;
+                    margin-right: 41.3px;
                 }
             }
         }
