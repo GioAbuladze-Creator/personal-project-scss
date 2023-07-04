@@ -154,6 +154,7 @@ body {
   border: none;
   margin-top: 16px;
   margin-left: -3px;
+  cursor: pointer;
 }
 .container-2 button p {
   width: 60px;
@@ -207,6 +208,7 @@ body {
     margin: 3px auto;
     line-height: 36px;
     letter-spacing: 0.4px;
+    padding-right: 3px;
   }
 }
 @media screen and (min-width: 1024px) {
