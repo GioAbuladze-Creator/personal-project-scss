@@ -1,0 +1,99 @@
+@media screen and ($desktop) {
+    .container-3{
+        height: 816px;
+        padding:114px 18.75% 0 19.35%;
+
+        h3{
+            font-size: 31px;
+            margin-left:-12px;
+        }
+        img{
+            left:-8px;
+            margin-top:11px;
+            height:17px;
+        }
+        // --content under header--
+        .content{
+            @include flex;
+            margin-top:86px;
+
+            .pic{
+                background-color:$white;
+                margin:0;
+                img{
+                    display:block;
+                    width: 510px;
+                    height: auto;
+                }
+            }
+            // --right side--
+            .info{
+                width: 49.45%;
+                >h4{
+                    color:$font-color-3;
+                    margin-top:6px;
+                    font-size: 31px;
+                    &::after{
+                        display: none;
+                    }
+                }
+                p{  
+                    color:$font-color-4;
+                    margin-top: 22px;
+                    font-size: 14px;
+                    line-height: 27px;
+                }
+                .features{
+                    @include flex;
+                    flex-wrap: wrap;
+                    margin-top:46px;
+                    padding:0 4% 0 0.5%;
+                    
+                    // --each feature--
+                    .feature{
+                        @include flex;
+                        width:45%;
+                        margin-bottom:51px;
+                        div{
+                            width: 75%;
+                            margin-right:-10.5%;
+                            h5{
+                                font-size: 18px;
+                                color:$font-color-3;
+                                letter-spacing: -0.4px;
+                            }
+                            p{
+                                margin-top: 10px;
+                                font-size: 13px;
+                                line-height: 22px;
+                                color:$font-color-4
+                            }
+                        }
+                        i{
+                            width:63px;
+                            height:63px;
+                            line-height: 63px;
+                            text-align: center;
+                            font-size: 24px;
+                            background-color: $icon-bg;
+                            border-radius: 50%;                          
+                            color:$white;
+                        }
+                        
+                    }
+                    
+                }
+
+            }
+        }
+        .tab-vers{
+            display: none;
+        }
+        .desk-vers{
+            display: block;
+        }
+        button{
+            display:none;
+        }
+    }
+}

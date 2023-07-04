@@ -3,3 +3,13 @@
     flex-direction:$direction;
     justify-content: space-between;
 }
+
+@mixin btn{
+    cursor:pointer;
+    border: none;
+    font-weight: bold;
+    font-size: 13px;
+    font-family:"Raleway", sans-serif;
+    color:$white;
+    background-color:$main-aqua;
+}

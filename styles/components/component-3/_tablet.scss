@@ -1,0 +1,46 @@
+@media screen and ($tablet) {
+    .container-3{
+        height: 1146px;
+        padding: 73px 3.38% 0 3.12%;
+        h3{
+            font-size:28.88px;
+            margin-left:3px;
+        }
+        img{
+            left:0;
+            height:16px;
+        }
+        .pic{
+            height: 421px;
+            margin-top: 58px;
+        }
+        h4{
+            font-size:25px;
+            margin-top:28px;
+            letter-spacing: -0.5px;
+            &::after{
+                margin-top:17px;
+            }
+        }
+        // --controling version--
+        .mob-vers{
+            display:none ;
+        }
+        .tab-vers{
+            display:block;
+        }
+        p{
+            margin-top:18px;
+            margin-left:1px;
+        }
+        ul{
+            margin-top:36px;
+            li{
+                width: 80%;
+            }
+        }
+        button{
+            margin-left:1px;
+        }
+    }
+}

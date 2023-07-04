@@ -27,22 +27,20 @@
         }
     }
     button{
+        @include btn;
         width: 64px;
         height: 19px;
-        background-color: $main-aqua;
-        border: none;
         margin-top:16px;
         margin-left:-3px;
-        cursor:pointer;
         p{ 
             width: 60px;
             height: 15px;
             margin:2px auto;
-            padding-left:3px;
-            color:$white;
+            padding-left:4px;
             border:1px solid $white;
             font-size: 7px;
             line-height: 14px;
+            letter-spacing: 0.02px;
         }
     }
     // --arrows in desktop--

@@ -139,32 +139,36 @@ body {
   letter-spacing: -0.8px;
   margin-left: -3px;
 }
-.container-2 p {
+.container-2 p, .container-2 .container-3 ul, .container-3 .container-2 ul {
   font-size: 9px;
   letter-spacing: -0.1px;
   margin-top: 1px;
 }
-.container-2 p span {
+.container-2 p span, .container-2 .container-3 ul span, .container-3 .container-2 ul span {
   display: none;
 }
 .container-2 button {
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  background-color: #3AB6B2;
   width: 64px;
   height: 19px;
-  background-color: #3AB6B2;
-  border: none;
   margin-top: 16px;
   margin-left: -3px;
-  cursor: pointer;
 }
-.container-2 button p {
+.container-2 button p, .container-2 button .container-3 ul, .container-3 .container-2 button ul {
   width: 60px;
   height: 15px;
   margin: 2px auto;
-  padding-left: 3px;
-  color: #ffffff;
+  padding-left: 4px;
   border: 1px solid #ffffff;
   font-size: 7px;
   line-height: 14px;
+  letter-spacing: 0.02px;
 }
 .container-2 div {
   display: none;
@@ -184,14 +188,14 @@ body {
     letter-spacing: -1.9px;
     margin-top: -5px;
   }
-  .container-2 p {
+  .container-2 p, .container-2 .container-3 ul, .container-3 .container-2 ul {
     font-size: 18.94px;
     margin-top: 4px;
     margin-left: -6px;
     font-weight: 300;
     letter-spacing: -0.07px;
   }
-  .container-2 p span {
+  .container-2 p span, .container-2 .container-3 ul span, .container-3 .container-2 ul span {
     display: inline;
   }
   .container-2 button {
@@ -200,7 +204,7 @@ body {
     margin-top: 36px;
     margin-left: -6px;
   }
-  .container-2 button p {
+  .container-2 button p, .container-2 button .container-3 ul, .container-3 .container-2 button ul {
     font-size: 12px;
     font-weight: bold;
     width: 138px;
@@ -226,7 +230,7 @@ body {
     margin-left: 22px;
     letter-spacing: -1px;
   }
-  .container-2 p {
+  .container-2 p, .container-2 .container-3 ul, .container-3 .container-2 ul {
     letter-spacing: 0.4px;
     margin-top: 6px;
     margin-left: 18px;
@@ -247,6 +251,241 @@ body {
   }
   .container-2 div img:last-child {
     right: 2.1%;
+  }
+}
+.container-3 {
+  width: 100%;
+  height: 799px;
+  padding: 37px 6.25% 0 6.25%;
+}
+.container-3 h3 {
+  font-size: 27px;
+  font-weight: 600;
+  text-align: center;
+  margin-left: 1px;
+}
+.container-3 h3 span {
+  color: #3AB6B2;
+}
+.container-3 > img {
+  display: block;
+  margin: 10px auto 0 auto;
+  position: relative;
+  left: -2px;
+}
+.container-3 .pic {
+  height: 207px;
+  background-color: #000000;
+  margin-top: 36px;
+}
+.container-3 .pic img {
+  display: none;
+}
+.container-3 h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 17px;
+  letter-spacing: -0.4px;
+}
+.container-3 h4::after {
+  content: "";
+  display: block;
+  width: 99%;
+  height: 1px;
+  margin: 11px auto 0 auto;
+  background-color: #E6E6E6;
+}
+.container-3 p, .container-3 ul {
+  display: block;
+  color: #525252;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 11px;
+  line-height: 23px;
+}
+.container-3 ul {
+  margin-top: 33px;
+}
+.container-3 ul li {
+  list-style: none;
+  margin-left: 31px;
+  margin-bottom: 19px;
+  position: relative;
+}
+.container-3 ul li::before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  color: #3AB6B2;
+  font-weight: 900;
+  font-size: 16px;
+  margin-right: 10px;
+  position: absolute;
+  left: -31px;
+  top: 1px;
+}
+.container-3 .mob-vers {
+  display: block;
+}
+.container-3 .tab-vers {
+  display: none;
+}
+.container-3 .desk-vers {
+  display: none;
+}
+.container-3 button {
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  background-color: #3AB6B2;
+  width: 138px;
+  height: 42px;
+  margin-top: 23px;
+  padding-right: 4px;
+  padding-bottom: 1px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-3 {
+    height: 1146px;
+    padding: 73px 3.38% 0 3.12%;
+  }
+  .container-3 h3 {
+    font-size: 28.88px;
+    margin-left: 3px;
+  }
+  .container-3 img {
+    left: 0;
+    height: 16px;
+  }
+  .container-3 .pic {
+    height: 421px;
+    margin-top: 58px;
+  }
+  .container-3 h4 {
+    font-size: 25px;
+    margin-top: 28px;
+    letter-spacing: -0.5px;
+  }
+  .container-3 h4::after {
+    margin-top: 17px;
+  }
+  .container-3 .mob-vers {
+    display: none;
+  }
+  .container-3 .tab-vers {
+    display: block;
+  }
+  .container-3 p, .container-3 ul {
+    margin-top: 18px;
+    margin-left: 1px;
+  }
+  .container-3 ul {
+    margin-top: 36px;
+  }
+  .container-3 ul li {
+    width: 80%;
+  }
+  .container-3 button {
+    margin-left: 1px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container-3 {
+    height: 816px;
+    padding: 114px 18.75% 0 19.35%;
+  }
+  .container-3 h3 {
+    font-size: 31px;
+    margin-left: -12px;
+  }
+  .container-3 img {
+    left: -8px;
+    margin-top: 11px;
+    height: 17px;
+  }
+  .container-3 .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 86px;
+  }
+  .container-3 .content .pic {
+    background-color: #ffffff;
+    margin: 0;
+  }
+  .container-3 .content .pic img {
+    display: block;
+    width: 510px;
+    height: auto;
+  }
+  .container-3 .content .info {
+    width: 49.45%;
+  }
+  .container-3 .content .info > h4 {
+    color: #323232;
+    margin-top: 6px;
+    font-size: 31px;
+  }
+  .container-3 .content .info > h4::after {
+    display: none;
+  }
+  .container-3 .content .info p, .container-3 .content .info ul {
+    color: #6A6A6A;
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 27px;
+  }
+  .container-3 .content .info .features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 46px;
+    padding: 0 4% 0 0.5%;
+  }
+  .container-3 .content .info .features .feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45%;
+    margin-bottom: 51px;
+  }
+  .container-3 .content .info .features .feature div {
+    width: 75%;
+    margin-right: -10.5%;
+  }
+  .container-3 .content .info .features .feature div h5 {
+    font-size: 18px;
+    color: #323232;
+    letter-spacing: -0.4px;
+  }
+  .container-3 .content .info .features .feature div p, .container-3 .content .info .features .feature div ul {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 22px;
+    color: #6A6A6A;
+  }
+  .container-3 .content .info .features .feature i {
+    width: 63px;
+    height: 63px;
+    line-height: 63px;
+    text-align: center;
+    font-size: 24px;
+    background-color: #3B3B3B;
+    border-radius: 50%;
+    color: #ffffff;
+  }
+  .container-3 .tab-vers {
+    display: none;
+  }
+  .container-3 .desk-vers {
+    display: block;
+  }
+  .container-3 button {
+    display: none;
   }
 }
 
