@@ -7,14 +7,25 @@
             font-size:31px;
             margin-left:12px;
         }
-        >img{
-            left:5px;
-            margin-top:4px;
-            width:111px;
+        .img-container{
+            margin-top:6px;
+            width: 111px;
+            left:7px;
+            img{
+                top:-2px;
+                left:0;
+                scale:1;
+            }
+            &::before,
+            &::after{
+                width:37px;
+                top:40%;
+            }
         }
+        
         .services{
             flex-direction: row;
-            margin:133px auto 0 auto;
+            margin:141px auto 0 auto;
             width: 70%;
             justify-content: space-between;
             position: relative;

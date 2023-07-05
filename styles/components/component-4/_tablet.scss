@@ -6,14 +6,23 @@
             font-size: 28.99px;
             margin-left:6px;
         }
-        >img{
-            width:104px;
-            margin-top:10px;
-            position:relative;
-            left:2px;
+        .img-container{
+            margin-top:13px;
+            width: 104px;
+            left:3px;
+            img{
+                left:0.3px;
+                top:-1px;
+                scale:0.95;
+            }
+            &::before,
+            &::after{
+                width:35px;
+                top:35%;
+            }
         }
         .services{
-            margin-top:51px;
+            margin-top:58px;
             .service{
                 margin-bottom:74px;
 

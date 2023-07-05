@@ -11,14 +11,27 @@
         font-weight:600;
         margin-left:2px;
     }
-    >img{
-        width:111px;
-        margin:9px auto 10px auto;
-    }   
+    .img-container{
+        position: relative;
+        width: 110px;
+        margin:9px auto 0 auto;
+        display:inline-block;
+        img{
+            position: relative;
+            left:2px;
+        }
+        // --dashes before and after icon--
+        @include dashes;
+        &::before,
+        &::after{
+            width:36px;
+            top:50%;
+        }
+    }       
     .services{
         @include flex(column);
         justify-content: flex-start;
-        margin-top:45px;
+        margin-top:56px;
         // --each service--
         .service{
             margin-bottom:43px;
