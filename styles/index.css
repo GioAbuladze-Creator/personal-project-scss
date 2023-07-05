@@ -83,10 +83,11 @@ body {
 @media screen and (min-width: 1024px) {
   .container-1 {
     height: 101px;
-    padding: 0 19.61% 0 19.5%;
+    padding: 0 19.65% 0 19.5%;
   }
   .container-1 .logo {
     margin-top: 0px;
+    margin-right: 10%;
   }
   .container-1 .logo img {
     height: 43px;
@@ -97,21 +98,22 @@ body {
     vertical-align: 0;
   }
   .container-1 .nav-links {
-    width: 749px;
+    width: 63.1%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
   .container-1 .nav-links a {
     text-decoration: none;
     color: #ffffff;
     font-size: 14px;
-    letter-spacing: -0.5px;
-    margin-top: -2px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: -0.2px;
+    margin-top: -3px;
   }
   .container-1 .nav-links a:not(:last-child) {
-    margin-right: 41.3px;
+    margin-right: 15px;
   }
   .container-1 .sandwich {
     display: none;

@@ -1,10 +1,11 @@
 @media screen and ($desktop) {
     .container-1 {
         height: 101px;
-        padding: 0 19.61% 0 19.5%;
+        padding: 0 19.65% 0 19.5%;
 
         .logo {
             margin-top: 0px;
+            margin-right:10%;
 
             img {
                 height: 43px;
@@ -18,19 +19,20 @@
         }
 
         .nav-links {
-            width: 749px;
+            width: 63.1%;
             @include flex;
-            justify-content: flex-end;
+            justify-content: space-between;
 
             a {
                 text-decoration: none;
                 color: $white;
                 font-size: 14px;
-                letter-spacing: -0.5px;
-                margin-top: -2px;
+                font-family: "Open Sans", sans-serif;
+                letter-spacing: -0.2px;
+                margin-top: -3px;
+                &:not(:last-child){
 
-                &:not(:last-child) {
-                    margin-right: 41.3px;
+                    margin-right:15px;
                 }
             }
         }
