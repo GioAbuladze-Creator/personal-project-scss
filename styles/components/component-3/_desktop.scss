@@ -65,34 +65,42 @@
                         width:45%;
                         margin-bottom:51px;
                         margin-right: -11px;
-                        div{
-                            width: 75%;
-                            margin-right:-11.5%;
-                            h5{
-                                width:148px;
-                                font-size: 18px;
-                                color:$font-color-3;
-                                letter-spacing: -0.4px;
-                            }
-                            p{
-                                width:185px;
-                                margin-top: 10px;
-                                font-size: 13px;
-                                line-height: 22px;
-                                color:$font-color-4
-                            }
-                        }
-                        i{
-                            width:63px;
-                            height:63px;
-                            line-height: 63px;
-                            text-align: center;
-                            font-size: 24px;
-                            background-color: $icon-bg;
-                            border-radius: 50%;                          
-                            color:$white;
-                        }
                         
+                        div{
+                            &:nth-child(1){
+                                width:63px;
+                                height:63px;
+                                line-height: 76px;
+                                padding-left: 20px;
+                                background-color: $icon-bg;
+                                border-radius: 50%;
+                                
+                            }
+                            &:nth-child(2){
+                                width: 75%;
+                                margin-right:-11.5%;
+                                h5{
+                                    width:148px;
+                                    font-size: 18px;
+                                    color:$font-color-3;
+                                    letter-spacing: -0.4px;
+                                }
+                                p{
+                                    width:185px;
+                                    margin-top: 10px;
+                                    font-size: 13px;
+                                    line-height: 22px;
+                                    color:$font-color-4
+                                }
+                            }
+                        }
+                        //little exception
+                        &:nth-child(2){
+                            div:nth-child(1){
+                                padding-left:23px;
+                            }
+                        }
+                                               
                     }
                     
                 }

@@ -27,20 +27,25 @@
             margin-bottom:7px;
             position:relative;
             .socials{
-                margin-top:43.5px;
-                margin-left:1px;
-                color:$white;
-                i{
+                @include flex;
+                width:90px;
+                margin:43.5px auto 0 auto;
+
+
+                div{
                     background-color: $main-aqua;
                     width: 26.4px;
                     height: 26.4px;
                     border-radius: 50%;
                     border:2px solid $main-aqua;
-                    line-height: 23px;
-                    font-size: 11px;
-                    margin:0 1px;
+                    line-height: 25px;
+                    padding-left:2px;
                     &:hover{
                         background-color: $section-bg-1;
+                    }
+                    &:nth-child(1){
+                        margin-right:2px;
+                        padding-left:1px;
                     }
                     &:nth-child(4),&:nth-child(5){
                         display: none;
@@ -90,7 +95,11 @@
             &:nth-child(5),&:nth-child(6),&:nth-child(7){
                 display: none;
             }
-            
+            //last one needs to be lower
+            &:nth-child(4){
+                margin-top:1px;
+            }  
         }
+
     }
 }
