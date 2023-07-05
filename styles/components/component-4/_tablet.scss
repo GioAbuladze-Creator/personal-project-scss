@@ -3,7 +3,7 @@
         height: 1287px;
         padding-top:72px;
         h2{
-            font-size: 28.99px;
+            @include h2-tablet;
             margin-left:6px;
         }
         .img-container{

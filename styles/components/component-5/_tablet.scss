@@ -4,7 +4,7 @@
         padding:73px 3.38% 0 3.12%;
         
         h2{
-            font-size: 29px;
+            @include h2-tablet;
         }
         .img-container{
             top:1px;

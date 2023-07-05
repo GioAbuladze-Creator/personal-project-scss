@@ -4,7 +4,7 @@
         height: 783px;
         padding:140px 0 0 0;
         h2{
-            font-size:31px;
+            @include h2-desktop;
             margin-right:7px;
         }
         .img-container{

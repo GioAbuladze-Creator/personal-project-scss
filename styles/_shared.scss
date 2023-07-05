@@ -38,3 +38,17 @@
         z-index: 1;
     }
 }
+
+// --mobile header style--
+@mixin h2-mobile{
+    font-size:27px;
+    font-weight: 600;
+}
+//it could be just variable but sometimes it takes more than one property
+@mixin h2-tablet{
+    font-size: 29px;
+}
+
+@mixin h2-desktop{
+    font-size: 31px;
+}
