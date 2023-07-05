@@ -1,0 +1,35 @@
+@media screen and ($tablet) {
+    .container-7{
+        height:298px;
+        margin-top:78px;
+        padding:47px 8px 0 0;
+        .logo{
+            img{
+                scale:1.1;
+                margin-top:2px;
+                margin-left:10px;
+                
+            }
+            span{
+                font-size:36px;
+                vertical-align:-1px;
+                margin-left:-4.5px;
+            }
+        }
+        .socials{
+            flex-wrap: nowrap;
+            margin-top:38px;
+            width:400px;
+            div{
+                margin:4.2px;
+            }
+            
+        }
+        p{
+            padding-right:0;
+            padding-left:9px;
+            margin-top:46px;
+        }
+        
+    }
+}

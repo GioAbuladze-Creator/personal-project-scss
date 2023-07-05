@@ -1,0 +1,52 @@
+.container-7{
+    height: 312px;
+    background-color: $section-bg-4;   
+    text-align: center;
+    color:$white;
+    padding-top:43px;
+    padding-right:2px;
+    .logo {
+        span{
+            font-size: 32.49px;
+            font-weight: 300;
+            margin-left:-5.5px;
+            vertical-align: 2px;
+            letter-spacing:0.5px;
+        } 
+    }
+    .socials{
+        @include flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width:200px;
+        margin:37px auto 37px auto;
+        div{
+            width:40px;
+            height:40px;
+            border-radius: 3px;
+            background-color: $section-bg-5;
+            margin:4.5px;
+            line-height: 42px;
+            padding-left:2px;
+            &:nth-child(1){
+                padding-right:2px;
+            }
+            &:nth-child(3){
+                padding-left:4px;
+                padding-top:1px;
+            }
+            &:nth-child(4){
+                margin-left:4px;
+                line-height:40px;
+            }
+            
+        }
+    }
+    p{
+        font-size: 11px;
+        color:$font-color-5;
+        letter-spacing:0.2px;
+        padding-right:6px;
+    }
+    
+}

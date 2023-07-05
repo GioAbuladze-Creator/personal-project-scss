@@ -1,0 +1,23 @@
+@media screen and ($desktop) {
+    .container-7{
+        margin-top:118px;
+        padding-right:0;
+        .logo{
+            img{
+                margin-left:2px;
+            }
+        }
+        .socials{
+            //hover only on desktop
+            @each $index,$color in $socials-hover{
+                div:nth-child(#{$index}):hover{
+                    background-color: $color;
+                }
+            }
+        }
+        p{
+            padding-left:0;
+            margin-top:44px;
+        }
+    }
+}
