@@ -159,8 +159,8 @@ body {
   cursor: pointer;
   border: none;
   font-weight: bold;
-  font-size: 13px;
   font-family: "Raleway", sans-serif;
+  font-size: 13px;
   color: #ffffff;
   background-color: #3AB6B2;
   width: 64px;
@@ -378,8 +378,8 @@ body {
   cursor: pointer;
   border: none;
   font-weight: bold;
-  font-size: 13px;
   font-family: "Raleway", sans-serif;
+  font-size: 13px;
   color: #ffffff;
   background-color: #3AB6B2;
   width: 138px;
@@ -654,7 +654,7 @@ body {
     padding-top: 72px;
   }
   .container-4 h2 {
-    font-size: 28.99px;
+    font-size: 29px;
     margin-left: 6px;
   }
   .container-4 .img-container {
@@ -977,6 +977,210 @@ body {
     font-size: 13px;
     margin-top: 7px;
     margin-right: 2px;
+  }
+}
+.container-6 {
+  height: 873.08px;
+  width: 282px;
+  margin: 0px auto 44.4px auto;
+  text-align: center;
+  color: #323232;
+}
+.container-6 h2 {
+  font-size: 27px;
+  font-weight: 600;
+  margin-right: 2px;
+  margin-top: 4px;
+}
+.container-6 .img-container {
+  margin-top: 11px;
+  right: 1px;
+  position: relative;
+  display: inline-block;
+  width: 96px;
+}
+.container-6 .img-container::before, .container-6 .img-container::after {
+  content: "";
+  position: absolute;
+  top: 56%;
+  width: 33px;
+  height: 1px;
+  background-color: #D3D3D3;
+}
+.container-6 .img-container::before {
+  left: 0;
+}
+.container-6 .img-container::after {
+  right: 0;
+}
+.container-6 .img-container img {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.container-6 .addresses {
+  margin-top: 41px;
+  height: 367.95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-6 .addresses div p, .container-6 .addresses div .container-3 ul, .container-3 .container-6 .addresses div ul {
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+}
+.container-6 .addresses div:nth-child(2) {
+  margin-top: -1px;
+}
+.container-6 .addresses div:nth-child(2) p, .container-6 .addresses div:nth-child(2) .container-3 ul, .container-3 .container-6 .addresses div:nth-child(2) ul {
+  margin-top: 21px;
+}
+.container-6 form {
+  margin-top: 37px;
+}
+.container-6 form input, .container-6 form textarea {
+  width: 99.5%;
+  height: 46px;
+  position: relative;
+  right: 1px;
+  border: 1px solid #D4D4D4;
+  font-size: 14px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.container-6 form input::placeholder, .container-6 form textarea::placeholder {
+  letter-spacing: 0.5px;
+  color: #7C7C7C;
+}
+.container-6 form input[type=submit], .container-6 form textarea[type=submit] {
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  background-color: #3AB6B2;
+  width: 160px;
+  height: 42px;
+  float: left;
+  margin-left: 1px;
+  padding-right: 11px;
+  padding-top: 2px;
+}
+.container-6 form textarea {
+  font-family: "Railway", sans-serif;
+  padding-top: 12px;
+  height: 141px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-6 {
+    height: 617.57px;
+    width: 725px;
+  }
+  .container-6 h2 {
+    font-size: 29px;
+    margin-top: 7px;
+    margin-right: 0;
+  }
+  .container-6 .img-container {
+    width: 102px;
+    right: -1px;
+  }
+  .container-6 .img-container img {
+    scale: 1.1;
+    position: relative;
+    top: 2px;
+  }
+  .container-6 .img-container::before, .container-6 .img-container::after {
+    width: 33px;
+  }
+  .container-6 .addresses {
+    flex-direction: row;
+    height: 145.95px;
+    width: 718px;
+    margin: 56px auto 0 auto;
+  }
+  .container-6 .addresses div:nth-child(2) {
+    margin-top: 6px;
+    margin-left: -13px;
+  }
+  .container-6 .addresses div:nth-child(3) {
+    margin-top: 1px;
+  }
+  .container-6 .addresses div:nth-child(1) img, .container-6 .addresses div:nth-child(3) img {
+    margin-right: 5px;
+  }
+  .container-6 form {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 3px;
+  }
+  .container-6 form input, .container-6 form textarea {
+    width: 100%;
+    margin-bottom: 14px;
+  }
+  .container-6 form input:nth-child(1), .container-6 form textarea:nth-child(1), .container-6 form input:nth-child(2), .container-6 form textarea:nth-child(2) {
+    width: 49.1%;
+  }
+  .container-6 form input:nth-child(2), .container-6 form textarea:nth-child(2) {
+    padding-left: 7px;
+  }
+  .container-6 form input[type=submit], .container-6 form textarea[type=submit] {
+    margin-left: 0px;
+    padding-right: 9px;
+    padding-top: 0;
+  }
+  .container-6 form textarea {
+    height: 171px;
+    margin-bottom: 16.5px;
+    padding-top: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container-6 {
+    width: 945px;
+    height: 687.25px;
+  }
+  .container-6 h2 {
+    font-size: 31px;
+    margin-top: 91px;
+  }
+  .container-6 .img-container {
+    width: 112px;
+    margin-top: 10px;
+    right: 0;
+  }
+  .container-6 .img-container::before, .container-6 .img-container::after {
+    width: 38px;
+  }
+  .container-6 .addresses {
+    width: 767px;
+    margin-top: 88px;
+  }
+  .container-6 .addresses div:nth-child(3) {
+    position: relative;
+    right: 16px;
+  }
+  .container-6 .addresses div:nth-child(3) p, .container-6 .addresses div:nth-child(3) .container-3 ul, .container-3 .container-6 .addresses div:nth-child(3) ul {
+    margin-top: 16px;
+    margin-right: 1px;
+  }
+  .container-6 form {
+    margin-top: 36px;
+    width: 946px;
+    padding: 0;
+  }
+  .container-6 form input:nth-child(2), .container-6 form textarea:nth-child(2) {
+    width: 49.2%;
+    padding-left: 9px;
   }
 }
 

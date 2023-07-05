@@ -1,0 +1,76 @@
+.container-6{
+    height: 873.08px;
+    width:282px;
+    margin:0px auto 44.4px auto;
+    text-align: center;
+    color:$font-color-3;
+    h2{
+        @include h2-mobile;
+        margin-right:2px;
+        margin-top:4px;
+    }
+    .img-container{
+        margin-top: 11px;
+        right:1px;
+        position: relative;
+        display:inline-block;
+        width: 96px;
+        @include dashes;
+    }  
+    .addresses{
+        margin-top:41px;
+        height: 367.95px;
+        @include flex(column);
+        
+        div{
+            p{ 
+                margin-top: 15px;
+                font-size:15px; 
+                line-height: 24px;
+                letter-spacing: 0.7px;
+            }
+            &:nth-child(2){
+                margin-top: -1px;
+                p{
+                    margin-top:21px;
+                }
+            }
+        }
+    }
+    form{
+        margin-top:37px;
+        input{
+            width: 99.5%;
+            height: 46px;
+            position: relative;
+            right:1px;
+            border: 1px solid $border-color;
+            font-size: 14px;
+            padding-left: 10px;
+            margin-bottom: 10px;
+            &::placeholder{
+                letter-spacing: 0.5px;
+                color:$placeholder-color;
+            }
+            &[type="submit"]{
+                @include btn;
+                width: 160px;
+                height: 42px;
+                float:left;
+                margin-left:1px;
+                padding-right:11px;
+                padding-top:2px;
+            }
+        }
+        textarea{
+            @extend input;
+            font-family: "Railway", sans-serif;
+            padding-top:12px;
+            height:141px;
+            margin-bottom: 8px;
+
+        }
+        
+    } 
+
+}

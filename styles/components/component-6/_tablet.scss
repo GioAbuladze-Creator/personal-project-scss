@@ -1,0 +1,74 @@
+@media screen and ($tablet) {
+    .container-6 {
+        height: 617.57px;
+        width: 725px;
+        h2{
+            @include h2-tablet;
+            margin-top:7px;
+            margin-right:0;
+        }
+        .img-container{
+            width: 102px;
+            right:-1px;
+            img{
+                scale:1.1;
+                position: relative;
+                top:2px;
+            }    
+            &::before,
+            &::after{
+                width: 33px;
+            }
+        }
+        .addresses{
+            flex-direction: row;
+            height: 145.95px;
+            width: 718px;
+            margin:56px auto 0 auto;
+            div{
+                &:nth-child(2){
+                    margin-top: 6px;
+                    margin-left:-13px;
+                }
+                &:nth-child(3){
+                    margin-top:1px;
+    
+                }
+                &:nth-child(1),&:nth-child(3){
+                    img{
+                        margin-right:5px;
+                    }
+                }
+            }
+            
+            
+            
+        }
+        form{
+            margin-top:0px;
+            @include flex;
+            flex-wrap: wrap;
+            padding:0 3px;
+            input{
+                width: 100%;
+                margin-bottom:14px;
+                &:nth-child(1),&:nth-child(2){
+                    width: 49.1%;
+                }
+                &:nth-child(2){
+                    padding-left:7px;
+                }
+                &[type="submit"]{
+                    margin-left:0px;
+                    padding-right:9px;
+                    padding-top:0;
+                }
+            }
+            textarea{
+                height: 171px;
+                margin-bottom:16.5px;
+                padding-top:16px;
+            }
+        }
+    }
+}
