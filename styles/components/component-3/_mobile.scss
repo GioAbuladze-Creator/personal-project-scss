@@ -10,13 +10,23 @@
             color:$main-aqua;
         }
     }
-    >img{
-        display: block;
-        margin: 10px auto 0 auto;
+    .img-container{
         position: relative;
-        left:-2px;
-        
-    }
+        right:2px;
+        width: 96px;
+        margin:10px auto 0 auto;
+        img{
+            position: relative;
+            left:2px;
+        }
+        // --dashes before and after icon--
+        @include dashes;
+        &::before,
+        &::after{
+            width:33px;
+            top:58%;
+        }
+    }       
     .pic{
         height: 207px;
         background-color: $black;
