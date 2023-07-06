@@ -22,16 +22,20 @@
             }
         }
         .services{
-            margin-top:58px;
+            margin-top:61px;
             .service{
-                margin-bottom:74px;
-
-                img{
-                    width: 125px;
+                &:not(:last-child){margin-bottom:77px;}
+                div{
+                    left: 8px;
+                    top:2px;
+                    img:not(:first-child){
+                        scale:1.06;
+                    }
                 }
+                
                 h3{
                     font-size:20px;
-                    margin-top:67px;
+                    margin-top:44px;
                     margin-left:5px;
                 }
                 p{
@@ -39,25 +43,19 @@
                     font-size: 14px;
                     line-height: 22px;
                     position: relative;
-                    left:2px;
+                    left:2.4px;
                 }
-                 // --each one needs adjustment--
                 &:nth-child(1){
                     div{
-                        img{
-                            margin-left:0px;
-                            margin-top:1px;
-                        }
+                        left:8.6px;
+                        
                     }
-                }
-                &:nth-child(2),&:nth-child(3){
-                    img{
-                        margin-left:0px;
-                        margin-top:2px;
-                    }
-                    
-                }
+                } 
+
                 &:nth-child(3){
+                    div{
+                        line-height: 140px;
+                    }
                     h3{
                         letter-spacing: 0.1px;
                     }

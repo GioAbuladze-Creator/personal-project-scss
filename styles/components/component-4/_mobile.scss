@@ -30,22 +30,67 @@
     .services{
         @include flex(column);
         justify-content: flex-start;
-        margin-top:56px;
+        margin-top:55px;
         // --each service--
         .service{
-            margin-bottom:43px;
+            &:not(:last-child){
+                margin-bottom:43px;
+            }
             div{
                 z-index: 0;
                 position: relative;
-                width: 120px;
-                height: 120px;
+                width: 130px;
+                height: 140px;
+                line-height: 140px;
+                padding-right:12px;
                 margin:0 auto;
+                left:7px;
+                img{
+                    transition-duration: 0.4s;
+                    &:not(:first-child){
+                        position: absolute;
+                        top:0;
+                        left:0;
+                    }
+                    //should hide mini border and aqua background until hover
+                    &:nth-child(2){
+                        opacity: 0;
+                    }
+                    &:nth-child(4){
+                        z-index: -1;
+                        opacity: 0;
+                    }
+                }
+                &:hover{
+                    img{
+                        &:nth-child(2),&:nth-child(4){
+                            opacity: 1;
+                        }
+                        &:nth-child(3){
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+            //little adjustment for icons
+            &:nth-child(1){
+                div{
+                    left:7.6px;
+                    top:1px;
+                    line-height: 149px;
+                    padding-right:12px;
+                }
+            }
+            &:nth-child(3){
+                div{
+                    line-height: 142px;;
+                }
             }
 
             h3{
                 font-size: 19px;
                 color:$main-aqua;
-                margin-top:58px;
+                margin-top:38px;
                 margin-left:2px;
             }
             p{
@@ -57,19 +102,8 @@
                 margin:13px auto 0 auto;
                 letter-spacing: 0.2px;
             }
-            // --each one needs adjustment--
-            &:nth-child(1){
-                div{
-                    img{
-                        margin-left:3px;
-                        margin-top:1px;
-                    }
-                }
-            }
+            
             &:nth-child(2),&:nth-child(3){
-                img{
-                    margin-left:2px;
-                }
                 h3{
                     letter-spacing: 0.3px;
                 }
